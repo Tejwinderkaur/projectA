@@ -1,0 +1,37 @@
+<!-Name: Tejwinder kaur
+ID: C0722747
+Group 4 CPCM -->
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<h2>Name:Tejwinder</h2>
+<h2>ID:c0722747</h2>
+<h2>Group4 CPCM </h2>
+<b>Discount Calculator</b>
+<script type="text/javascript">
+function calculate() {
+
+var price = parseFloat(document.getElementById(price).value);
+    var discount = parseFloat(document.getElementById(discount).value);
+	var discountAmount = price*discount/100;
+
+ var afterDiscount = price - discountAmount;
+
+document.getElementById(afterDiscount).value=afterDiscount;
+document.getElementById(disountAmount).value=discountAmount;
+
+}
+</script>
+</head>
+<body>
+<form name="discountCalculator" >
+    Actual Price: <input type="text" name="price" ><br>
+    Discount Percentage: <input type="text" name="discount" ><br>
+	Discount Amount: <input type="text" name="discountAmount" ><br>
+    After Discount: <input type="text" name="afterDiscount" ><br>
+</form>
+<input type="button" value="submit" onclick="calculate()">
+</body>
+</html>
